@@ -1,2 +1,2 @@
 # algorithm-challenger
-Algorithm Challenger
+Algorithm Challenger.
