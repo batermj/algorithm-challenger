@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.4
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, counting algorithm
+#### algorithm in language Python
+
 # version 0.0.3
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, counting algorithm
