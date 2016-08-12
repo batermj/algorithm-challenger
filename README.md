@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.6
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, counting algorithm
+#### algorithm in language PHP
+
 # version 0.0.5
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, counting algorithm
