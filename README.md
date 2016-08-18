@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.8
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, counting algorithm
+#### algorithm in language Perl
+
 # version 0.0.7
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, counting algorithm
