@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.9
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, counting algorithm
+#### algorithm in language Ruby
+
 # version 0.0.8
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, counting algorithm
