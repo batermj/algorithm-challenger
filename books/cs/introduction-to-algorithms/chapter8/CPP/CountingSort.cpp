@@ -1,7 +1,7 @@
 #include <iostream>
 
-int main(){
-	std::cout << "Hello World!" << std::endl;
-
-	return 0;
+int main(int argc, const char * argv[]) {
+    // insert code here...
+    std::cout << "Hello, World!\n";
+    return 0;
 }
