@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.10
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, counting algorithm
+#### algorithm in language CPP
+
 # version 0.0.9
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, counting algorithm
