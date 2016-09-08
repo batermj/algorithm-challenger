@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.12
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, counting algorithm
+#### algorithm in language Haskell
+
 # version 0.0.11
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, counting algorithm
