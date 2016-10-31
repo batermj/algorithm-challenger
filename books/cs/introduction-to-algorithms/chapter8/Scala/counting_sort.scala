@@ -5,18 +5,13 @@ object CountingSort{
 		val dataSetSize = 100
 		val rnd = new Random
 		val aaa = List.fill(10)(Random.nextInt(10))
-		var bbb = new Array[Int](aaa.size+1)
+		var bbb = new Array[Int](aaa.size)
 		var ccc = new Array[Int](aaa.max+1)
 		var idx = 0
 		var total = 0
 
-		println(aaa)
-		println(aaa.max)
-		println("the size of the array bbb")
-		println(bbb.size)
-		println(ccc.size)
+		println(s"the source dataset is $aaa")
 		for( idx <- aaa ){
-			println(idx)
 			ccc(idx) = ccc(idx) + 1
 		}
 		println(ccc.toList)
@@ -29,7 +24,7 @@ object CountingSort{
 		println(ccc.toList)
 
 		for(idx <- aaa.reverse){
-			bbb(ccc(idx)) = idx
+			bbb(ccc(idx)-1) = idx
 			ccc(idx) = ccc(idx) - 1
 		}
 		println(bbb.toList)
