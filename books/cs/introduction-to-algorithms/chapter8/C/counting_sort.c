@@ -26,7 +26,6 @@ int main( void )
 	}
 
 	counting_sort( testdata, rtndata, DATASETSIZE );
-
 	for(idx=0;idx<DATASETSIZE;idx++){
 		printf("%zu\t,%d,\n",idx,rtndata[idx]);
 	}
@@ -60,7 +59,7 @@ int counting_sort( int testdata[], int rtndata[], size_t len )
 	}
 
 	for(jdx=DATASETSIZE;jdx>=1;jdx--){
-		rtndata[tempdata[testdata[jdx-1]]] = testdata[jdx-1];
+		rtndata[tempdata[testdata[jdx-1]]-1] = testdata[jdx-1];
 		tempdata[testdata[jdx-1]] = tempdata[testdata[jdx-1]] - 1;
 	}
 
