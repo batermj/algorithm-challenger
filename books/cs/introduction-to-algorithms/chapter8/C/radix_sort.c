@@ -79,7 +79,7 @@ int counting_sort( int srcdata[], int testdata[], int rtndata[], size_t len )
 
 	for(jdx=DATASETSIZE;jdx>=1;jdx--){
 		//rtndata[tempdata[testdata[jdx-1]]] = testdata[jdx-1];
-		rtndata[tempdata[testdata[jdx-1]]] = srcdata[jdx-1];
+		rtndata[tempdata[testdata[jdx-1]]-1] = srcdata[jdx-1];
 		tempdata[testdata[jdx-1]] = tempdata[testdata[jdx-1]] - 1;
 	}
 
