@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.17
+## Introduction to Algorithm, 3rd Edition
+### chapter 8, radix sort algorithm
+#### algorithm in language R
+
 # version 0.0.16
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, bucket sort algorithm
