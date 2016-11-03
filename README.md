@@ -4,7 +4,7 @@ Algorithm Challenger.
 # version 0.0.19
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 7, quick sort algorithm
-#### algorithm in language C,R
+#### algorithm in language C,R,Scala
 
 # version 0.0.18
 ## Introduction to Algorithm, 3rd Edition
