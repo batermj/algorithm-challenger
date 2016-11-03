@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.19
+## Introduction to Algorithm, 3rd Edition
+### chapter 7, quick sort algorithm
+#### algorithm in language C,R
+
 # version 0.0.18
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 8, bucket sort algorithm
