@@ -1,6 +1,11 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+# version 0.0.20
+## Introduction to Algorithm, 3rd Edition
+### chapter 7, quick sort algorithm with randomized partion pivot
+#### algorithm in language C,R,Scala
+
 # version 0.0.19
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 7, quick sort algorithm
