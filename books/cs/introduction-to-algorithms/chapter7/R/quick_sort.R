@@ -16,8 +16,12 @@ swap <- function(i,j){
   srcdata[j] <<- temp
 }
 
-partition <- function(p,r){
+partition <- function(p,r,partitionType){
   print(c(p,r,"",length(srcdata),srcdata))
+  if(partitionType>0){
+	i <- p + sample(r-p,1)
+	swap(i,p)
+  }
   x <- srcdata[r]
   idx <- p-1
   for(jdx in p:(r-1)){
@@ -31,15 +35,22 @@ partition <- function(p,r){
   return( idx+1 )
 }
 
-quick_sort <- function(p,r){
+quick_sort <- function(p,r,partitionType){
   if( p<r ){
-    q <- partition(p,r)
-    quick_sort(p,q-1)
-    quick_sort(q+1,r)
+    q <- partition(p,r,partitionType)
+    quick_sort(p,q-1,partitionType)
+    quick_sort(q+1,r,partitionType)
     print(c(p,r, srcdata))
   }
 }
 
+print("Quick sort algorithm with original partition pivot")
 print(srcdata)
-quick_sort(1,length(srcdata))
+quick_sort(1,length(srcdata),0)
+print(srcdata)
+print("Quick sort algorithm with randomized partition pivot")
+aaa <- sample(999,10,replace = T)
+srcdata <- aaa[aaa>100]
+print(srcdata)
+quick_sort(1,length(srcdata),1)
 print(srcdata)
