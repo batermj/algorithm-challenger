@@ -18,11 +18,16 @@ object QuickSort{
     def swap(srcdata: Array[Int], p: Int, r: Int):Unit = {
 	}
 
-    def partition(srcdata: Array[Int], p: Int, r:Int):Int = {
+    def partition(srcdata: Array[Int], p: Int, r:Int, partitionType:Int):Int = {
 		var i:Int = 0
 		var j:Int = 0
-		val x:Int = srcdata[r]
+		var x:Int = 0
 
+		if(partitionType>0){
+			i = r
+			swap(srcdata,i,r)
+		}
+		x = srcdata[r]
 		i = p-1
 		for( j <- p to (r-1) ){
 			if( srcdata[j]<=x ){
@@ -34,13 +39,13 @@ object QuickSort{
 		return(i+1)
 	}
 
-    def quick_sort(srcdata: Array[Int], p: Int, r: Int):Unit = {
+    def quick_sort(srcdata: Array[Int], p: Int, r: Int, partitionType: Int):Unit = {
         var q = 0
 
 		if( p<r ){
 			q = partition(srcdata,p,r)
-			quick_sort(srcdata,p,q-1)
-			quick_sort(srcdata,q+1,p)
+			quick_sort(srcdata,p,q-1,partitionType)
+			quick_sort(srcdata,q+1,p,partitionType)
 		}
     }
 
