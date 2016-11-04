@@ -47,7 +47,7 @@ void swap(double* srcdata,int i,int j){
 }
 
 int partition(double* srcdata,int p,int r, int partitionType){
-    double x = srcdata[r];
+    double x;
     int i,j;
 
 	if(partitionType>0){
@@ -55,6 +55,7 @@ int partition(double* srcdata,int p,int r, int partitionType){
 		printf("partition at %d,%d,%d\n",p,r,i);
 		swap(srcdata,i,r);	
 	}
+    x = srcdata[r];
 
     i = p-1;
     for(j=p;j<r;j++){
