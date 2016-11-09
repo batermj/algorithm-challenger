@@ -44,7 +44,7 @@ left <- function(i){
   return(2*i)
 }
 
-left <- function(i){
+right <- function(i){
   return(2*i+1)
 }
 
@@ -66,8 +66,24 @@ max_heapify <- function(len,i){
   }
 }
 
+build_max_heap <- function(len){
+  
+  for( idx in floor(len/2):1 ){
+	max_heapify(len,idx)
+  }
+}
 
+heap_sort <- function(len){
+  
+  build_max_heap(len)
+  for( idx in len:2 ){
+	swap(idx,1)
+	len <- len-1
+	max_heapify(len,1)
+  }
+}
 
 print(srcdata)
-quick_sort(1,length(srcdata))
+#quick_sort(1,length(srcdata))
+heap_sort(length(srcdata))
 print(srcdata)
