@@ -7,9 +7,6 @@
 rm( list=ls() )
 gc()
 
-aaa <- sample(999,10,replace = T)
-srcdata <- aaa[aaa>100]
-
 swap <- function(i,j){
   temp <- srcdata[i]
   srcdata[i] <<- srcdata[j]
@@ -44,13 +41,36 @@ quick_sort <- function(p,r,partitionType){
   }
 }
 
+quick_sort_v2 <- function(srcdata){
+  if( length(srcdata)<=1 ) return(srcdata)
+  
+  q <- 1
+  pivot <- srcdata[q]
+  srcdata <- srcdata[-1]
+
+  data_smaller <- srcdata[srcdata<=pivot]
+  data_bigger <- srcdata[srcdata>pivot]
+  
+  return(c(quick_sort_v2(data_smaller),pivot,quick_sort_v2(data_bigger)))
+}
+
 print("Quick sort algorithm with original partition pivot")
+aaa <- sample(999,10,replace = T)
+srcdata <- aaa[aaa>100]
 print(srcdata)
 quick_sort(1,length(srcdata),0)
 print(srcdata)
+
 print("Quick sort algorithm with randomized partition pivot")
 aaa <- sample(999,10,replace = T)
 srcdata <- aaa[aaa>100]
 print(srcdata)
 quick_sort(1,length(srcdata),1)
+print(srcdata)
+
+print("Quick sort algorithm with result returned by function")
+aaa <- sample(999,10,replace = T)
+srcdata <- aaa[aaa>100]
+print(srcdata)
+srcdata <- quick_sort_v2(srcdata)
 print(srcdata)
