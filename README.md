@@ -1,6 +1,10 @@
 # algorithm-challenger
 Algorithm Challenger.
 
+
+# version 0.0.23
+## mv the directory "Introduction to Algorithm, 3rd Edition" to "general-purpose-algorithms"
+
 # version 0.0.22
 ## Linear Algebra with Application, 8th Edition
 ### chapter 1, test001
