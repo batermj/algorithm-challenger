@@ -16,30 +16,6 @@ swap <- function(i,j){
   srcdata[j] <<- temp
 }
 
-partition <- function(p,r){
-  print(c(p,r,"",length(srcdata),srcdata))
-  x <- srcdata[r]
-  idx <- p-1
-  for(jdx in p:(r-1)){
-    if( srcdata[jdx] >= x ){
-      idx <- idx + 1
-      swap(idx,jdx)
-    }
-  }
-  swap(idx+1,r)
-  print(c(p,r,idx+1,length(srcdata),srcdata))
-  return( idx+1 )
-}
-
-quick_sort <- function(p,r){
-  if( p<r ){
-    q <- partition(p,r)
-    quick_sort(p,q-1)
-    quick_sort(q+1,r)
-    print(c(p,r, srcdata))
-  }
-}
-
 left <- function(i){
   return(2*i)
 }
@@ -56,7 +32,7 @@ max_heapify <- function(len,i){
   if( l<=len && srcdata[l]>srcdata[i] ){
     largest <- l
   }else largest <- i
-  if( r<=len && srcdata[r]>srcdata[i] ){
+  if( r<=len && srcdata[r]>srcdata[largest] ){
     largest <- r
   }
   
