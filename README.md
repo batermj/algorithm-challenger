@@ -3,7 +3,12 @@ Algorithm Challenger.
 
 # version 0.0.21
 ## Introduction to Algorithm, 3rd Edition
-### chapter 6, heap sort algorithm with randomized partion pivot
+### chapter 6, fixed the issue for the heap sort algorithm
+#### algorithm in language R
+
+# version 0.0.21
+## Introduction to Algorithm, 3rd Edition
+### chapter 6, heap sort algorithm
 #### algorithm in language C,R,Scala
 
 # version 0.0.20
