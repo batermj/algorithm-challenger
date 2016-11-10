@@ -10,15 +10,18 @@ object QuickSort{
         var idx:Int = 0
         var jdx:Int = 0
 
-        println("the source array")
-        println(srcdata.toList)
-        println(srcdata.toList)
+        println(s"the source array, ${srcdata.toList}")
+    	quick_sort(srcdata,0, dataSetSize-1, 0)
+        println(s"the result, ${srcdata.toList}")
     }
 
     def swap(srcdata: Array[Int], p: Int, r: Int):Unit = {
+		val temp = srcdata(p)
+		srcdata(p) = srcdata(r)
+		srcdata(r) = temp
 	}
 
-    def partition(srcdata: Array[Int], p: Int, r:Int, partitionType:Int):Int = {
+    def partition(srcdata: Array[Int], p: Int, r: Int, partitionType:Int):Int = {
 		var i:Int = 0
 		var j:Int = 0
 		var x:Int = 0
@@ -27,10 +30,10 @@ object QuickSort{
 			i = r
 			swap(srcdata,i,r)
 		}
-		x = srcdata[r]
+		x = srcdata(r)
 		i = p-1
 		for( j <- p to (r-1) ){
-			if( srcdata[j]<=x ){
+			if( srcdata(j)<=x ){
 				i = i+1
 				swap(srcdata,i,j)
 			}
@@ -43,7 +46,7 @@ object QuickSort{
         var q = 0
 
 		if( p<r ){
-			q = partition(srcdata,p,r)
+			q = partition(srcdata,p,r,partitionType)
 			quick_sort(srcdata,p,q-1,partitionType)
 			quick_sort(srcdata,q+1,p,partitionType)
 		}
