@@ -2,6 +2,12 @@
 Algorithm Challenger.
 
 
+
+# version 0.0.24
+## Introduction to Algorithm, 3rd Edition
+### chapter 6, the max priority queue  algorithm
+#### algorithm in language C
+
 # version 0.0.23
 ## mv the directory "Introduction to Algorithm, 3rd Edition" to "general-purpose-algorithms"
 
