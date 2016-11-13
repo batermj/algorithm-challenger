@@ -100,12 +100,25 @@ double heap_extract_max(double* srcdata, int len){
 	return(max);
 }
 
-double heap_increase_key(double* srcdata, int len, int idx, double dValue){
+int parent(int idx){
+	return( floor(idx/2) );
+}
+
+void heap_increase_key(double* srcdata, int len, int idx, double dValue){
 	if(srcdata[idx]<dValue){
 		printf("new key is smaller than current key.\n");
 		exit(1);
 	}
 	srcdata[idx] = dValue;
 
-	while( idx>0 && srcdata]
+	while( idx>0 && srcdata[parent(idx)]<srcdata[idx] ){
+		swap(srcdata,idx,parent(idx));
+		idx = parent(idx);
+	}
+}
+
+void max_heap_insert(double* srcdata, int* len, double dValue){
+	*len = *len + 1;
+	srcdata[*len-1] = -1;
+	heap_increase_key(srcdata,*len,*len,dValue);
 }
