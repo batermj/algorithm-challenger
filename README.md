@@ -1,7 +1,10 @@
 # algorithm-challenger
 Algorithm Challenger.
 
-
+# version 0.0.25
+## Introduction to Algorithm, 3rd Edition
+### chapter 4, find maximu submemory  algorithm
+#### algorithm in language C
 
 # version 0.0.24
 ## Introduction to Algorithm, 3rd Edition
