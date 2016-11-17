@@ -12,7 +12,7 @@ struct rtnData{
 	double sum;
 };
 
-void quick_sort(double* srcdata, int p, int r, int partitionType);
+struct rtnData find_maximum_subarray(double* srcdata, int low, int high);
 void printArray(double* srcdata){
 	int idx;
 
@@ -25,66 +25,21 @@ void printArray(double* srcdata){
 
 int main(void){
     double srcdata[DATASETSIZE];
-    int idx, jdx;
+	struct rtnData rtn;
+    int idx, jdx, sign;
 
     srand(time(NULL));
     for( idx=0; idx<DATASETSIZE; idx++ ){
         srcdata[idx] = rand()*1.0/RAND_MAX;
+		sign = ( srcdata[idx] > 0.5 )?-1:1;
+		srcdata[idx] *= sign;
     }
-	printArray(srcdata);
-    printf("\nQuick sort algorithm with original partition pivot\n");
-    quick_sort(srcdata,0,DATASETSIZE-1,0);
-	printArray(srcdata);
-    printf("\nQuick sort algorithm with randomized partition pivot\n");
-    for( idx=0; idx<DATASETSIZE; idx++ ){
-        srcdata[idx] = rand()*1.0/RAND_MAX;
-    }
-	printArray(srcdata);
-    quick_sort(srcdata,0,DATASETSIZE-1,1);
 	printArray(srcdata);
 
+	rtn = find_maximum_subarray(srcdata, 0, DATASETSIZE-1);
+	printf("(left,right,sum) = (%d,%d,%f)\n",rtn.max_left,rtn.max_right,rtn.sum);
 	printf("DBL_MAX = %f\n",-1*DBL_MAX);
 	return 0;
-}
-
-void swap(double* srcdata,int i,int j){
-    double temp;
-
-    temp = srcdata[i];
-    srcdata[i] = srcdata[j];
-    srcdata[j] = temp;
-}
-
-int partition(double* srcdata,int p,int r, int partitionType){
-    double x;
-    int i,j;
-
-	if(partitionType>0){
-		i = (int)((rand()*1.0/RAND_MAX)*(r-p)+p);
-		printf("partition at %d,%d,%d\n",p,r,i);
-		swap(srcdata,i,r);	
-	}
-    x = srcdata[r];
-
-    i = p-1;
-    for(j=p;j<r;j++){
-        if( srcdata[j]<=x ){
-            i++;
-            swap(srcdata,i,j);
-        }
-    }
-    swap(srcdata,i+1,r);
-    return i+1;
-}
-
-
-void quick_sort(double* srcdata, int p, int r, int partitionType){
-    int q=0;
-    if( p<r ){
-        q = partition(srcdata,p,r,partitionType);
-        quick_sort(srcdata,p,q-1,0);
-        quick_sort(srcdata,q+1,r,0);
-    }
 }
 
 struct rtnData find_max_crossing_subarray(double* srcdata, int low, int mid, int high){
@@ -116,14 +71,26 @@ struct rtnData find_max_crossing_subarray(double* srcdata, int low, int mid, int
 }
 
 struct rtnData find_maximum_subarray(double* srcdata, int low, int high){
-	struct rtnData rtn;
+	struct rtnData rtn,rtn_left,rtn_right,rtn_crossing;
 	int mid=0;
 
 	if( high == low ){
 		rtn.max_left = low;
 		rtn.max_right = high;
 		rtn.sum = srcdata[low];
-		return rtn;
+	}else{
+		mid = (int)floor((low+high)/2);
+		rtn_left = find_maximum_subarray(srcdata,low,mid);
+		rtn_right = find_maximum_subarray(srcdata,mid+1,high);
+		rtn_crossing = find_max_crossing_subarray(srcdata,low,mid,high);
+
+		if( (rtn_left.sum >= rtn_right.sum) && (rtn_left.sum >= rtn_crossing.sum) ){
+			rtn = rtn_left;
+		}else if ( (rtn_right.sum >= rtn_left.sum) && (rtn_right.sum >= rtn_crossing.sum) ){
+			rtn = rtn_right;
+		}else{
+			rtn = rtn_crossing;
+		}
 	}
 	
 	return rtn;	
