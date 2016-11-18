@@ -1,2 +1,5 @@
-Books List:
-1, Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
+# algorithm-challenger
+Algorithm Challenger.
+
+#Books List:
+##1, Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
