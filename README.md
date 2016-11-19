@@ -1,5 +1,16 @@
 # algorithm-challenger
 Algorithm Challenger.
+Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
+
+# version 0.0.27
+##Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
+### chapter 1, first example
+#### algorithm in language R
+
+# version 0.0.26
+## Introduction to Algorithm, 3rd Edition
+### chapter 4, find maximu submemory  algorithm
+#### algorithm in language R
 
 # version 0.0.25
 ## Introduction to Algorithm, 3rd Edition
