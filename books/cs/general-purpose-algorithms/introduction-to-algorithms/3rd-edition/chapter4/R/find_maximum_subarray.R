@@ -11,59 +11,35 @@ gc()
 aaa <- sample(999,10,replace = T)
 srcdata <- aaa[aaa>100]
 
-swap <- function(i,j){
-  temp <- srcdata[i]
-  srcdata[i] <<- srcdata[j]
-  srcdata[j] <<- temp
-}
+find_max_crossing_subarray <- function(srcdata,low,mid,high){
+	left_sum <- -2^31
+	max_left <- mid
+	sum <- 0
+	for( idx in mid:low ){
+		sum <- sum + srcdata[idx]
+		if( sum > left_sum ){
+			left_sum <- sum
+			max_left <- idx
+		}
+	}	
 
-left <- function(i){
-  return(2*i)
-}
-
-right <- function(i){
-  return(2*i+1)
-}
-
-max_heapify <- function(len,i){
-  l <- left(i)
-  r <- right(i)
-  largest <- 0
-  
-  if( l<=len && srcdata[l]>srcdata[i] ){
-    largest <- l
-  }else largest <- i
-  if( r<=len && srcdata[r]>srcdata[largest] ){
-    largest <- r
-  }
-  
-  if( largest != i ){
-    swap(i,largest)
-    max_heapify(len,largest)
-  }
-}
-
-build_max_heap <- function(len){
-  
-  for( idx in floor(len/2):1 ){
-	max_heapify(len,idx)
-  }
-}
-
-heap_sort <- function(len){
-  
-  build_max_heap(len)
-  for( idx in len:2 ){
-	swap(idx,1)
-	len <- len-1
-	max_heapify(len,1)
-  }
-}
-
-find_max_crossing_subarray(srcdata,low,mid,high){
+	right_sum <- -2^31
+	max_right <- mid
+	sum <- 0
+	for( idx in mid:high ){
+		sum <- sum + srcdata[idx]
+		if( sum > right_sum ){
+			right_sum <- sum
+			max_right <- idx
+		}
+	}
+	c( max_left, max_right, left_sum+right_sum )
 }
 
 print(srcdata)
-#quick_sort(1,length(srcdata))
-heap_sort(length(srcdata))
-print(srcdata)
+low <- 1
+high <- length(srcdata)
+mid <- floor(high/2)
+rtn_crossing <- find_max_crossing_subarray(srcdata,low,mid,high)
+print(rtn_crossing)
+
