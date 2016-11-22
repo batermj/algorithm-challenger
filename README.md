@@ -1,6 +1,10 @@
 # algorithm-challenger
 Algorithm Challenger.
-Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
+
+# version 0.0.29
+##Scala for Machine Learning, 2014, Packt Publishing, cs>machine-learning>
+### chapter 1, first example
+#### algorithm in language R
 
 # version 0.0.28
 ## Introduction to Algorithm, 3rd Edition
@@ -8,7 +12,7 @@ Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.or
 #### algorithm in language C
 
 # version 0.0.27
-##Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
+##Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/, cs>data-mining>
 ### chapter 1, first example
 #### algorithm in language R
 
