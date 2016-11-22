@@ -2,6 +2,11 @@
 Algorithm Challenger.
 Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
 
+# version 0.0.28
+## Introduction to Algorithm, 3rd Edition
+### chapter 2, insertion sort algorithm
+#### algorithm in language C
+
 # version 0.0.27
 ##Mining of Massive Datasets,The 2nd edition of the book (v2.1),http://www.mmds.org/
 ### chapter 1, first example
