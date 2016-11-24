@@ -3,6 +3,10 @@ Algorithm Challenger.
 
 Category
 
+# version 0.0.5
+##major> cs> machine-learning>
+###Scala for Machine Learning, 2015Dec18, Packt Publishing
+
 # version 0.0.4
 ##major> cs> machine-learning>
 ###Learning Data Mining with R, 2015Jan31, Packt Publishing
