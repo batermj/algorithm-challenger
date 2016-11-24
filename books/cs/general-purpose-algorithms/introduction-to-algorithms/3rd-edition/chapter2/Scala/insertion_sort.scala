@@ -16,6 +16,7 @@ object QuickSort{
 		var iValue: Int = 0
 		for( idx <- 1 to (srcdata.length-1) ){
 			iValue = srcdata(idx)
+			jdx = idx - 1
 			while( jdx >= 0 && iValue < srcdata(jdx) ){
 				println(s"(${idx},${jdx}),${srcdata(jdx+1)},${srcdata(jdx)}, ${iValue}")
 				srcdata(jdx+1) = srcdata(jdx)
