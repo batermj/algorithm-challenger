@@ -3,6 +3,10 @@ Algorithm Challenger.
 
 Category
 
+# version 0.0.5
+##major> cs> machine-learning>
+###Machine Learning for Hackers, 1st Edition, 2012 February, Drew Conway and John Myles White, O'Reilly Publishing
+
 # version 0.0.4
 ##major> cs> machine-learning>
 ###Learning Data Mining with R, 2015Jan31, Packt Publishing
