@@ -18,13 +18,10 @@ object QuickSort{
 			iValue = srcdata(idx)
 			jdx = idx - 1
 			while( jdx >= 0 && iValue < srcdata(jdx) ){
-				println(s"(${idx},${jdx}),${srcdata(jdx+1)},${srcdata(jdx)}, ${iValue}")
 				srcdata(jdx+1) = srcdata(jdx)
 				jdx = jdx - 1
 			}
 			srcdata(jdx+1) = iValue
-            println(s"jdx=${jdx},${srcdata.toList}")
 		}
-    }
-
+	}
 }
