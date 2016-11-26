@@ -4,9 +4,14 @@ Algorithm Challenger.
 Category: >cs>general-purpose-algorithms>introduction-to-algorithm>3rd-edition
 initialize the merge sort algorithm in language C
 
-# version 0.0.31
+# version 0.0.32
 ## Introduction to Algorithm, 3rd Edition
 ### chapter 2, insertion sort algorithm
+#### algorithm in language R
+
+# version 0.0.31
+## Introduction to Algorithm, 3rd Edition
+### chapter 2, merge sort algorithm
 #### algorithm in language R
 
 # version 0.0.30
