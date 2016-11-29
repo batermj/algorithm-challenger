@@ -2,7 +2,7 @@
 Algorithm Challenger.
 
 #Category
-##major> cs> computer-science-journals-and-conferences> Applied Mathematics
+##major> journals-and-conferences> mathematics> Applied Mathematics
 ###Computer Science Journals & Conferences to be added to Algorithm Challenger Github project:
 
 #Topics
