@@ -4,7 +4,7 @@ import scala.collection._
 object HeapSort{
     def main(args: Array[String]):Unit = {
         val dataSetSize = 10
-        var srcdata = util.Random.shuffle(100 to 999).take(dataSetSize).toArray;
+        var srcdata = util.Random.shuffle(-999 to 999).take(dataSetSize).toArray;
         var aaa = new Array[Int](dataSetSize)
         var bbb = new Array[Int](aaa.size)
         val digit = 3
@@ -13,9 +13,8 @@ object HeapSort{
 		var rtn: (Int,Int,Int) = (0,0,0)
 
         println(s"the source array, ${srcdata.toList}")
-        //heap_sort(srcdata,dataSetSize)
-		rtn = find_max_subarray( srcdata, 1, dataSetSize )
-        println(s"the sorted data, ${srcdata.toList}")
+		rtn = find_max_subarray( srcdata, 0, dataSetSize-1 )
+        println(s"the sorted data, ${srcdata.toList}, the returned index is ${rtn}")
     }
 
     def swap(srcdata: Array[Int], p: Int, r: Int):Unit = {
