@@ -2,7 +2,7 @@
 rm( list=ls() )
 gc()
 
-tbl <- read.csv("data/itemsets002.csv", header=FALSE)
+tbl <- read.csv("../data/itemsets002.csv", header=FALSE)
 tbl <- as.matrix(tbl)
 colnames(tbl) <- NULL
 itemsets <- t(tbl)

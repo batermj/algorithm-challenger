@@ -4,7 +4,7 @@ gc()
 
 library(arules)
 
-load("data/datasets006.RData")
+load("../data/datasets006.RData")
 
 rules <- apriori(datasets006)
 print(rules)
