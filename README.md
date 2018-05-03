@@ -3,9 +3,9 @@ Algorithm Challenger.
 
 Category
 
-# version 0.0.7
-##major> competitions> computer-sciences
-### added the sub category, competitions>computer-sciences
+## version 0.0.7
+major> competitions> computer-sciences
++ added the sub category, competitions>computer-sciences
 
 # version 0.0.6
 ##major> journals-and-conferences>
