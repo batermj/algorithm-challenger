@@ -2,6 +2,9 @@ package main
 
 import (
 	"fmt"
+	"bytes"
+	"strings"
+	"strconv"
 	"unicode/utf8"
 )
 
@@ -57,6 +60,45 @@ func main(){
 	r2 := []rune(s7)
 	fmt.Printf("%x\n", r2) 
 
+	s8 := "巴特尔·马哈比尔"
+	fmt.Printf("% c\n", s8) 
+	fmt.Printf("% x\n", s8) 
+	r3 := []rune(s8)
+	fmt.Printf("%x\n", r3) 
+	fmt.Println(string(r3))
+
+	fmt.Println(string(1234567)) 
+
+	fmt.Println(basename("a/b/c.go")) // "c"
+	fmt.Println(basename("c.d.go"))   // "c.d"
+	fmt.Println(basename("abc"))      // "abc"
+
+	fmt.Println(basename02("a/b/c.go")) // "c"
+	fmt.Println(basename02("c.d.go"))   // "c.d"
+	fmt.Println(basename02("abc"))      // "abc"
+
+	s9 := "31415926"
+	fmt.Println(s9,comma(s9))
+
+	s10 := "abc"
+	b2 := []byte(s10)
+	s11 := string(b2)
+	fmt.Println(s10,b2,s11)
+
+	fmt.Println(intsToString([]int{1, 2, 3}))
+
+	x := 123
+	y := fmt.Sprintf("%d", x)
+	fmt.Println(y, strconv.Itoa(x)) 
+
+	fmt.Println(strconv.FormatInt(int64(x), 2)) 
+	fmt.Println(fmt.Sprintf("x=%b", x))
+	
+	x2, err1 := strconv.Atoi("123") 
+	y2, err2 := strconv.ParseInt("123", 10, 64)
+	fmt.Println(x2,y2,err1,err2)
+
+	
 }
 
 func HasPrefix(s, prefix string) bool {
@@ -77,3 +119,60 @@ func Contains(s, substr string) bool {
 }
 
 
+     
+// basename removes directory components and a .suffix.
+     
+// e.g., a => a, a.go => a, a/b/c.go => c, a/b.c.go => b.c
+     
+func basename(s string) string {
+	// Discard last '/' and everything before.
+	for i := len(s) - 1; i >= 0; i-- {
+    	if s[i] == '/' {
+        	s = s[i+1:]
+			break
+		} 
+	}
+
+	// Preserve everything before last '.'.
+	for i := len(s) - 1; i >= 0; i-- {
+    	if s[i] == '.' {
+        	s = s[:i]
+			break
+		} 
+	}
+	return s
+}
+
+func basename02(s string) string {
+	slash := strings.LastIndex(s, "/") // -1 if "/" not found
+	s = s[slash+1:]
+         
+	if dot := strings.LastIndex(s, "."); dot >= 0 {
+		s = s[:dot]
+	}
+	return s
+}
+
+// comma inserts commas in a non-negative decimal integer string.
+func comma(s string) string {
+	n := len(s)
+	if n <= 3 {
+		return s
+	}
+	return comma(s[:n-3]) + "," + s[n-3:]
+}
+
+// intsToString is like fmt.Sprintf(values) but adds commas.
+     
+func intsToString(values []int) string {
+	var buf bytes.Buffer
+	buf.WriteByte('[')
+	for i, v := range values {
+    	if i > 0 {
+        	buf.WriteString(", ")
+    	}
+    	fmt.Fprintf(&buf, "%d", v)
+	}
+	buf.WriteByte(']')
+	return buf.String()
+}
