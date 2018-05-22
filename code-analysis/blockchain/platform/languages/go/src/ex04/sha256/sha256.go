@@ -44,4 +44,17 @@ func testArray(){
 		fmt.Printf("%d %s\n",i,v)
 	}
 
+	r2	 := [...]int{99: -1}
+	fmt.Printf("%T\n",r2)
+	fmt.Println(r2)
+
+
+	a2 := [2]int{1, 2}
+	b2 := [...]int{1, 2}
+	c2 := [2]int{1, 3}
+	fmt.Println(a2 == b2, a2 == c2, b2 == c2) // "true false false"
+
+	d := [3]int{1, 2}
+	fmt.Println(a == d)
+
 }
