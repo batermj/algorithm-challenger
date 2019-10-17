@@ -35,5 +35,19 @@ Analysis the Software Stack for the Main Architectures
 + FreeBSD
 + UNIX
 
+## Programming Language
++ Assembly
++ Python
++ Kylin
++ JavaScript
++ C
++ C++
++ Java
++ Scala
++ R
++ Swift
++ PHP
++ BASH/Shell
+
 ## Kids Programming
 + Scratch
