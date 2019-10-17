@@ -5,6 +5,8 @@ Analysis the Software Stack for the Main Architectures
 ## ML Framework
 + Tensorflow
 + PyTorch
++ Keras
+
 
 ## Data Sciences Framework
 + Scikit-Learn
