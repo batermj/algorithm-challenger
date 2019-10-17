@@ -6,6 +6,7 @@ Analysis the Software Stack for the Main Architectures
 + Tensorflow
 + PyTorch
 + Keras
++ Core ML
 
 ## Auto ML Framework
 + AdaNet
