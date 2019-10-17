@@ -15,6 +15,11 @@ Analysis the Software Stack for the Main Architectures
 + BERT
 + XLNet
 
+## NLP
+
+## Voice
++ Kaldi
+
 ## Data Sciences Framework
 + Scikit-Learn
 + Scipy
