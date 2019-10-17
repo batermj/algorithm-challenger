@@ -7,6 +7,8 @@ Analysis the Software Stack for the Main Architectures
 + PyTorch
 + Keras
 
+## Auto ML Framework
++ AdaNet
 
 ## Data Sciences Framework
 + Scikit-Learn
