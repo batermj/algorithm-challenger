@@ -30,5 +30,10 @@ Analysis the Software Stack for the Main Architectures
 
 ## System Architect View
 
+## OS
++ LINUX
++ FreeBSD
++ UNIX
+
 ## Kids Programming
 + Scratch
