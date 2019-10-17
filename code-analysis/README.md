@@ -10,6 +10,10 @@ Analysis the Software Stack for the Main Architectures
 ## Auto ML Framework
 + AdaNet
 
+## Machine Translation
++ BERT
++ XLNet
+
 ## Data Sciences Framework
 + Scikit-Learn
 + Scipy
