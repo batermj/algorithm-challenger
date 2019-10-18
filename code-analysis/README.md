@@ -16,6 +16,7 @@ Analysis the Software Stack for the Main Architectures
 + XLNet
 
 ## NLP
++ The pkuseg toolkit for multi-domain Chinese word segmentation
 
 ## Voice
 + Kaldi
