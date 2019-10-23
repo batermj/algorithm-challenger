@@ -40,6 +40,12 @@ Analysis the Software Stack for the Main Architectures
 + HBase
 + Hive
 
+## Database
++ MySQL
++ MariaDB
++ PostgreSQL
+
+
 ## System Architect View
 
 ## OS
