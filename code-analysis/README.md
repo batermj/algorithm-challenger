@@ -17,6 +17,10 @@ Analysis the Software Stack for the Main Architectures
 
 ## NLP
 + The pkuseg toolkit for multi-domain Chinese word segmentation
++ NLTK(Natural Language Toolkit)
++ Stanford CoreNLP
++ Gensim
+
 
 ## Voice
 + Kaldi
@@ -41,6 +45,9 @@ Analysis the Software Stack for the Main Architectures
 + LINUX
 + FreeBSD
 + UNIX
+
+## IDE
++ Jupyter Notebook
 
 ## Programming Language
 + Assembly
