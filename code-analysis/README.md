@@ -65,3 +65,8 @@ Analysis the Software Stack for the Main Architectures
 
 ## Kids Programming
 + Scratch
+
+## Production Tools
++ Tmux
++ Git
+
