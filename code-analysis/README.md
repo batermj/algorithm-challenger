@@ -45,6 +45,11 @@ Analysis the Software Stack for the Main Architectures
 + MariaDB
 + PostgreSQL
 
+## Time Series DB
++ PinalyticsDB from Pinterest
+
+## Graph DB
+
 ## Scheduling Tools
 + Airflow
 
