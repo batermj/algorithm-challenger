@@ -20,6 +20,7 @@ Analysis the Software Stack for the Main Architectures
 + NLTK(Natural Language Toolkit)
 + Stanford CoreNLP
 + Gensim
++ SpaCy
 
 
 ## Voice
