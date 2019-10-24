@@ -84,6 +84,7 @@ Analysis the Software Stack for the Main Architectures
 + Lambda
 + Kappa
 + Unifield
++ IOTA
 
 ## OS
 + LINUX
