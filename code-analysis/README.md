@@ -50,11 +50,18 @@ Analysis the Software Stack for the Main Architectures
 + Flume
 + Kafka
 + Yarn
-+ Kubernates
 + Sqoop
 + Kettle
 + Oozie
 + Azkaabann
++ ZooKeeper
+
+## Cloud 
++ Kubernates
+
+## Queue
++ Redis
+
 
 
 
