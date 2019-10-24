@@ -55,6 +55,7 @@ Analysis the Software Stack for the Main Architectures
 + Oozie
 + Azkaabann
 + ZooKeeper
++ Taobao DataX
 
 ## Cloud 
 + Kubernates
