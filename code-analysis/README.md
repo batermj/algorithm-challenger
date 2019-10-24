@@ -40,6 +40,7 @@ Analysis the Software Stack for the Main Architectures
 + Hadoop/MapReduce
 + Kylin
 + Storm
++ IBM STREAM
 + Flink
 + HBase
 + Hive
