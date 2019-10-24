@@ -45,6 +45,8 @@ Analysis the Software Stack for the Main Architectures
 + MongoDB
 + ElasticSearch
 + HDFS
++ Flume
++ Kafka
 
 ## Database
 + MySQL
