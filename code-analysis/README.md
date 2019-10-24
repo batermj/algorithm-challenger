@@ -43,11 +43,19 @@ Analysis the Software Stack for the Main Architectures
 + Flink
 + HBase
 + Hive
++ Impala
 + MongoDB
 + ElasticSearch
 + HDFS
 + Flume
 + Kafka
++ Yarn
++ Kubernates
++ Sqoop
++ Kettle
++ Oozie
++ Azkaabann
+
 
 
 ## Database
