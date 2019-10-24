@@ -37,13 +37,19 @@ Analysis the Software Stack for the Main Architectures
 ## Big Data Framework
 + Spark
 + Hadoop
++ Kylin
 + HBase
 + Hive
++ MongoDB
++ ElasticSearch
++ HDFS
 
 ## Database
 + MySQL
 + MariaDB
 + PostgreSQL
+
+
 
 ## Time Series DB
 + PinalyticsDB from Pinterest
@@ -54,6 +60,9 @@ Analysis the Software Stack for the Main Architectures
 + Airflow
 
 ## System Architect View
++ Lambda
++ Kappa
++ Unifield
 
 ## OS
 + LINUX
@@ -83,4 +92,15 @@ Analysis the Software Stack for the Main Architectures
 ## Production Tools
 + Tmux
 + Git
+
+## Security
++ 
+
+## Recommendation
+
+## Search Engine
+
+## Advertisement
+
+## 
 
