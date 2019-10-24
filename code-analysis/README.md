@@ -36,6 +36,7 @@ Analysis the Software Stack for the Main Architectures
 
 ## Big Data Framework
 + Spark
++ Beam
 + Hadoop/MapReduce
 + Kylin
 + Storm
