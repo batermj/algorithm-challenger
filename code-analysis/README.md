@@ -36,7 +36,7 @@ Analysis the Software Stack for the Main Architectures
 
 ## Big Data Framework
 + Spark
-+ Hadoop
++ Hadoop/MapReduce
 + Kylin
 + Storm
 + Flink
@@ -47,6 +47,7 @@ Analysis the Software Stack for the Main Architectures
 + HDFS
 + Flume
 + Kafka
+
 
 ## Database
 + MySQL
