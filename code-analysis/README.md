@@ -131,3 +131,10 @@ Analysis the Software Stack for the Main Architectures
 ## IoT
 + MQTT/Mosquito
 + Protobuf
+
+## Cloud Provider
++ AWS
++ Alibaba
++ UCloud
++ Microsoft
+
