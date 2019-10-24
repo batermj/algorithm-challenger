@@ -128,3 +128,6 @@ Analysis the Software Stack for the Main Architectures
 
 ## Visualization
 
+## IoT
++ MQTT/Mosquito
++ Protobuf
