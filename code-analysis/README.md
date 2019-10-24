@@ -38,6 +38,8 @@ Analysis the Software Stack for the Main Architectures
 + Spark
 + Hadoop
 + Kylin
++ Storm
++ Flink
 + HBase
 + Hive
 + MongoDB
@@ -93,6 +95,9 @@ Analysis the Software Stack for the Main Architectures
 + Tmux
 + Git
 
+## Virtualization
++ Docker
+
 ## Security
 + 
 
@@ -102,5 +107,5 @@ Analysis the Software Stack for the Main Architectures
 
 ## Advertisement
 
-## 
+## Visualization
 
