@@ -70,6 +70,8 @@ Analysis the Software Stack for the Main Architectures
 + MySQL
 + MariaDB
 + PostgreSQL
++ GreenPlum
+
 
 
 
