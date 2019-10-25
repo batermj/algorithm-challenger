@@ -2,20 +2,30 @@
 Code Analysis.
 Analysis the Software Stack for the Main Architectures
 
-## ML Framework
+## Machine Learning Framework
++ Scikit-learn
++ StatsModel
++ XGBoost
++ LightGBM
+
+
+## Deep Learning Framework
 + Tensorflow
 + PyTorch
 + Keras
 + Core ML
 
+## Reinforcement Learning Framework
++
+
 ## Auto ML Framework
 + AdaNet
 
 ## Machine Translation
-+ BERT
-+ XLNet
 
 ## NLP
++ BERT
++ XLNet
 + The pkuseg toolkit for multi-domain Chinese word segmentation
 + NLTK(Natural Language Toolkit)
 + Stanford CoreNLP
@@ -26,10 +36,9 @@ Analysis the Software Stack for the Main Architectures
 ## Voice
 + Kaldi
 
+
 ## Data Sciences Framework
-+ Scikit-Learn
-+ Scipy
-+ StatsModel
++ SciPy
 + Numpy
 + Pandas
 + Dask
