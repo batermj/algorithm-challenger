@@ -42,9 +42,6 @@
 \pagenumbering{roman}
 \tableofcontents
 
-First document. This is a simple example, with no 
-extra parameters or packages included.
-
 % Comments 
 \begin{comment}
 This text won't show up in the compiled pdf
@@ -54,13 +51,14 @@ while working on the draft.
 \end{comment}
 
 \newpage
+
 This is the contents.
 
 \pagenumbering{arabic}
 \setcounter{page}{1} 
 
 \newpage
-Matrix Notation:
+\section {Matrix Notation}
 
 The following linear system can be compactily recorded in a rectangular array called matrix
 \begin{equation}
@@ -75,10 +73,25 @@ x_{1} - 2x_{2} + x_{3}  = 0\\
 
 
 
-The matrix with the coefficients of each variable aligned in columns, the matrix is called the coefficient matrix (or matrix of coefficients) of the linear system.
+The matrix with the coefficients of each variable aligned in columns, the matrix
+\begin{equation}
+\left\{
+\begin{array}{l}
+$$\begin{bmatrix} 1 & -2 & 1 \\ 0 & 2 & -8 \\ 5 & 0 & -5 \end{bmatrix}$$
+\end{array}
+\right. 
+\end{equation}
 
-$\begin{bmatrix} 1 & -2 & 1 \\ 0 & 2 & -8 \\ 5 & 0 & -5 
-\end{bmatrix}$
+
+is called the \textbf{coefficient matrix} (or \textbf{matrix of coefficients}) of the linear system (1), and the followinig matrix is called \textbf{augmented matrix} of the system.
+\begin{equation}
+\left\{
+\begin{array}{l}
+$$\begin{bmatrix} 1 & -2 & 1 & 0\\ 0 & 2 & -8 & 8\\ 5 & 0 & -5 &10
+\end{bmatrix}$$
+\end{array}
+\right. 
+\end{equation}
 
 \newpage
 ex. 1. Mark each statement True or False. Justify each answer. (If true, cite appropriate facts or theorems. If false, explain why or give a counterexample that shows why the statement is not true in every case.
