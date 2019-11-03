@@ -106,6 +106,7 @@ Analysis the Software Stack for the Main Architectures
 
 ## IDE
 + Jupyter Notebook
++ Zeppelin
 
 ## Programming Language
 + Assembly
