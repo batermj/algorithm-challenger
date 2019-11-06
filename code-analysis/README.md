@@ -21,6 +21,9 @@ Analysis the Software Stack for the Main Architectures
 ## Auto ML Framework
 + AdaNet
 
+## ML Framework
++ Streamlit
+
 ## Machine Translation
 
 ## NLP
