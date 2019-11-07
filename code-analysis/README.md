@@ -146,6 +146,9 @@ Analysis the Software Stack for the Main Architectures
 
 ## Visualization
 
+## parallelisation
+CUDA SDK
+
 ## IoT
 + MQTT/Mosquito
 + Protobuf
