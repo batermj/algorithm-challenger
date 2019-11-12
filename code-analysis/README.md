@@ -76,8 +76,7 @@ Analysis the Software Stack for the Main Architectures
 
 ## Queue
 + Redis
-
-
++ RabbitMQ
 
 
 ## Database
@@ -85,7 +84,6 @@ Analysis the Software Stack for the Main Architectures
 + MariaDB
 + PostgreSQL
 + GreenPlum
-
 
 
 
@@ -148,7 +146,7 @@ Analysis the Software Stack for the Main Architectures
 ## Visualization
 
 ## parallelisation
-CUDA SDK
++ CUDA SDK
 
 ## IoT
 + MQTT/Mosquito
