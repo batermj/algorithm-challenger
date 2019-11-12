@@ -45,6 +45,7 @@ Analysis the Software Stack for the Main Architectures
 + Numpy
 + Pandas
 + Dask
++ Numba
 
 ## Big Data Framework
 + Spark
