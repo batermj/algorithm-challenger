@@ -15,6 +15,9 @@ Analysis the Software Stack for the Main Architectures
 + Keras
 + Core ML
 
+## Tools for Efficiency Improvement with DL development
++ MAX, Python DL Package, Model Asset eXchange: Path to Ubiquitous Deep Learning Deployment, https://arxiv.org/abs/1909.01606
+
 ## Reinforcement Learning Framework
 +
 
