@@ -2,11 +2,13 @@
 Code Analysis.
 Analysis the Software Stack for the Main Architectures
 
+## Machine Learning Algorithms
++ XGBoost
++ LightGBM
+
 ## Machine Learning Framework
 + Scikit-learn
 + StatsModel
-+ XGBoost
-+ LightGBM
 
 
 ## Deep Learning Framework
