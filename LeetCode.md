@@ -4,6 +4,9 @@
 + 最大交换 lc 670 
 + 数组中乘积最大的三个数 lc 628
 
+# problems
++ 0001, Python - 两数之和, https://blog.csdn.net/qq_42292831/article/details/91128003
+
 
 # Blogs&Codes
 + https://github.com/youngyangyang04/leetcode-master
