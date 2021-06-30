@@ -26,3 +26,55 @@
 ## 回文字符串(Palindromic_String)
 + 回文字符串(Palindromic_String), https://blog.csdn.net/weixin_43272781/article/details/89713050
 + 
+
+# [TensorFlow]
++ TensorFlow, https://www.w3cschool.cn/tensorflow_python/tensorflow_python-l5x72feg.html
+
+# [PyTorch]
++ PyTorch 中文教程, https://www.w3cschool.cn/pytorch/
+
+# [Python]
++ Python, https://www.runoob.com/python/python-operators.html
+
+# [C++]
+
+# [Scala]
+
+# [Go]
+
+# [Swift]
+
+
+# [Network]
++ Http
++ Https
+
+# [HBase]
+
+# [Kafka]
+
+# [Redis]
+
+# [Hive]
+
+# [Hive SQL]
+
+# [Spark]
+
+# [Recommendations]
+
+# [Computer Visions]
+
+# [Natural Language Processing]
+
+# [Computational Advertisement]
+
+# [Robotics]
+
+# [Data Sciences]
+
+# [Patterns]
+
+# [Architecture]
+
+# []
