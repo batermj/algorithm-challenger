@@ -82,6 +82,10 @@
 
 # [Patterns]
 
+# [Parallel Computation]
+
+# [Distributed Computation]
+
 # [Architecture]
 + [Grokking the System Design Interview](https://www.educative.io/courses/grokking-the-system-design-interview?aff=K7qB)
 + 
